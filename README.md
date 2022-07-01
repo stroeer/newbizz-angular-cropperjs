@@ -1,3 +1,9 @@
+# newbizz-angular-cropperjs
+
+WARNING: This package won't be maintained! It's only used for internal purposes!
+
+# original readme
+
 # angular-cropperjs
 
 [CropperJS](https://fengyuanchen.github.io/cropperjs/) integration for Angular +6
@@ -13,14 +19,14 @@ $ npm install angular-cropperjs --save
 2- Import and load `AngularCropperjsModule` in the module you want to use, for example `AppModule`:
 
 ```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
 //
 // Import angular-cropperjs
-import { AngularCropperjsModule } from 'angular-cropperjs';
+import { AngularCropperjsModule } from "angular-cropperjs";
 
 @NgModule({
     declarations: [AppComponent],
@@ -29,10 +35,10 @@ import { AngularCropperjsModule } from 'angular-cropperjs';
 
         //
         // Load angular-cropperjs
-        AngularCropperjsModule
+        AngularCropperjsModule,
     ],
     providers: [],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
 })
 export class AppModule {}
 ```
@@ -41,7 +47,10 @@ export class AppModule {}
 
 ```html
 <!-- You can now use angular-cropper component in app.component.html -->
-<angular-cropper [cropperOptions]="config" [imageUrl]="imageUrl"></angular-cropper>
+<angular-cropper
+    [cropperOptions]="config"
+    [imageUrl]="imageUrl"
+></angular-cropper>
 ```
 
 **Using CropperJS methods:**
