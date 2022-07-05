@@ -1,76 +1,74 @@
 {
-  "name": "angular-cropperjs-app",
-  "description": "CropperJS integration for Angular +6",
-  "version": "1.0.1",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/matheusdavidson/angular-cropperjs"
-  },
-  "author": {
-    "name": "Matheus Davidson",
-    "email": "matheusdavidson@gmail.com"
-  },
-  "keywords": [
-    "angular",
-    "angular2",
-    "angular4",
-    "angular-library",
-    "angular-component",
-    "cropperjs",
-    "cropper",
-    "image"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/matheusdavidson/angular-cropperjs/issues"
-  },
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build_lib": "ng build --configuration production angular-cropperjs",
-    "npm_pack": "cd dist/angular-cropperjs && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^13.3.11",
-    "@angular/cli": "^13.3.8",
-    "@angular/common": "^13.3.11",
-    "@angular/compiler": "^13.3.11",
-    "@angular/core": "^13.3.11",
-    "@angular/forms": "^13.3.11",
-    "@angular/platform-browser": "^13.3.11",
-    "@angular/platform-browser-dynamic": "^13.3.11",
-    "@angular/router": "^13.3.11",
-    "core-js": "^2.5.4",
-    "cropperjs": "^1.4.1",
-    "rxjs": "^6.6.7",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.4"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~13.3.8",
-    "@angular/compiler-cli": "^13.3.11",
-    "@angular/language-service": "^13.3.11",
-    "@types/jasmine": "~3.6.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^13.3.1",
-    "protractor": "~7.0.0",
-    "ts-node": "~5.0.1",
-    "tslint": "~6.1.0",
-    "typescript": "^4.6.4"
-  }
+    "name": "angular-cropperjs-app",
+    "description": "CropperJS integration for Angular +6",
+    "version": "1.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/stroeer/newbizz-angular-cropperjs"
+    },
+    "author": {
+        "name": "Matheus Davidson - Forked by stroeer"
+    },
+    "keywords": [
+        "angular-library",
+        "angular-component",
+        "cropperjs",
+        "cropper",
+        "image"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/stroeer/newbizz-angular-cropperjs/issues"
+    },
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "test": "ng test",
+        "lint": "ng lint",
+        "e2e": "ng e2e",
+        "build_lib": "ng build --configuration production angular-cropperjs",
+        "npm_pack": "cd dist/angular-cropperjs && npm pack",
+        "package": "npm run build_lib && npm run npm_pack",
+        "github:pub": "cd dist/angular-cropperjs && npm publish",
+        "github:release": "npm run build_lib && npm run npm_pack && npm run github:pub"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/animations": "^13.3.11",
+        "@angular/cli": "^13.3.8",
+        "@angular/common": "^13.3.11",
+        "@angular/compiler": "^13.3.11",
+        "@angular/core": "^13.3.11",
+        "@angular/forms": "^13.3.11",
+        "@angular/platform-browser": "^13.3.11",
+        "@angular/platform-browser-dynamic": "^13.3.11",
+        "@angular/router": "^13.3.11",
+        "core-js": "^2.5.4",
+        "cropperjs": "^1.4.1",
+        "rxjs": "^6.6.7",
+        "tslib": "^2.0.0",
+        "zone.js": "~0.11.4"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "~13.3.8",
+        "@angular/compiler-cli": "^13.3.11",
+        "@angular/language-service": "^13.3.11",
+        "@types/jasmine": "~3.6.0",
+        "@types/jasminewd2": "~2.0.3",
+        "@types/node": "^12.11.1",
+        "codelyzer": "^6.0.0",
+        "jasmine-core": "~3.6.0",
+        "jasmine-spec-reporter": "~5.0.0",
+        "karma": "~6.4.0",
+        "karma-chrome-launcher": "~3.1.0",
+        "karma-coverage-istanbul-reporter": "~3.0.2",
+        "karma-jasmine": "~4.0.0",
+        "karma-jasmine-html-reporter": "^1.5.0",
+        "ng-packagr": "^13.3.1",
+        "protractor": "~7.0.0",
+        "ts-node": "~5.0.1",
+        "tslint": "~6.1.0",
+        "typescript": "^4.6.4"
+    }
 }

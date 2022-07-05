@@ -24,14 +24,8 @@ jobs:
             - name: Build Code
               run: npm run build_lib
 
-            - name: Clean Up Package
-              run: npm run npm_pack
-
-            - name: npm publish
+            - name: Pack and publish
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
-                  RELEASE_TAG=${GITHUB_REF/refs\/tags\/v/}
-                  echo $RELEASE_TAG
-                  npm version $RELEASE_TAG --no-git-tag-version
-                  npm publish
+                  npm run github:release

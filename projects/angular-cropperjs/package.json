@@ -1,7 +1,7 @@
 {
     "name": "@stroeer/angular-cropperjs",
     "description": "CropperJS integration for Angular +6 - Fork for +13",
-    "version": "1.0.2",
+    "version": "2.0.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/stroeer/newbizz-angular-cropperjs"
